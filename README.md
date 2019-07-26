@@ -7,6 +7,7 @@ hive udf 自定义json数组解析
 1、打jar
 2、将jar上传到linux服务器或hdfs上
 3、在hive-client使用：
+
 	创建临时函数：
 	hive>add jar /home/hadoop/json_array.jar; --jar包在服务器的路径，也可以是hdfs的路径
 	hive>create temporary function json_array as ‘com.hxg.udf.Json_array’;
